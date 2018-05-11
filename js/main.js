@@ -31,21 +31,23 @@ function writeMarkdown(markdown,fn) {
 
 
 let result = `/*
- * 面试官你好，我是
- * 我用动画的形式来介绍我自己
- * 首先准备一些样式
+ * 面试官你好，我是彭奕泽
+ * 下面是我的会动的简历~
  */
  
+/* 首先给所有元素加上过渡效果 */
 *{
  transition: all 1s;
 }
+/* 白色背景太单调了，我们来点背景 */
 html{
-    background: rgb(242,242,242);
-    font-size: 16px;
+    background: #ddd;
 }
+/* 文字离边框太近了 */
 #code-wrapper{
     padding: 20px;
 }
+/* 加个边框 */
 #code{
     border: 1px solid #888;
     padding: 24px;
@@ -59,17 +61,16 @@ html{
     color: #905;
 }
 
-/* 呼吸效果 */
+/* 来点呼吸效果 */
 #code{
     animation: breath 0.5s infinite alternate-reverse;
 }
-
 `;
 
 
 let result2 = `
 
-/* 需要一张白纸 */
+/* 接下来给自己准备一张白纸 */
 #code-wrapper{
     position: fixed;
     width: 50%;
@@ -80,7 +81,6 @@ let result2 = `
 #code{
     border: 1px solid #888;
 }
-
 #paper{
     position: fixed;
     right: 0;
@@ -92,55 +92,53 @@ let result2 = `
     align-items: center;
     padding: 16px;
 }
-
 #paper > .content{
    background: white;
    width: 100%;
    height: 100%;
 }
-
-/* 于是可以在白纸上写字了 */
-
+/* 好了，我开始写简历了 */
 `;
 
 let md = `
  # 自我介绍
-
- 我叫彭奕泽
- 目前在南京信息工程大学就读
- 自学前端半年
- 希望应聘前端开发
+   
+   我叫彭奕泽
+   目前在南京信息工程大学读大三
+   自学前端半年
+   希望应聘前端开发的职位
 
  # 技能介绍
-
- 熟悉
- - JavaScript 
- - css 
- - HTML
+   
+   熟悉
+   - JavaScript 
+   - css 
+   - HTML
+   - Vue.js
 
 
  # 项目介绍
-
- 1. 画板
- 2. 轮播
- 3. 键盘导航页
+   
+   1. [画板](http://pengyize.top/canvas)
+   2. [键盘导航页](http://pengyize.top/nav)
+   3. [用css画皮卡丘](http://pengyize.top/Pikachu)
 
 
  # 联系方式
-
- - 微信 soulze
- - qq 649786395
+   
+   - 微信 soulze
+   - QQ  649786395
 
 
  # 我的资料
- - [我的博客](https://pengyize.github.io/)
- - [GitHub](https://github.com/Pengyize)
+   
+   - [我的博客](https://pengyize.github.io/)
+   - [GitHub](https://github.com/Pengyize)
  
 `;
 
 let result3 = `
-/* 接下来用一个优秀的库 marked.js
- * 把markdown变成HTML 
+/* 接下来用一个优秀的库 marked.js 把markdown变成HTML 
  */
 
 `;
